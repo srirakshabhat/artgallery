@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.ArtsGalleryListFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_margin="@dimen/margin_10"
+        android:iconifiedByDefault="false"
+        android:focusable="true"
+        android:clickable="true"
+        app:queryHint="@string/search_art"
+        android:background="@drawable/bg_searchview"
+        android:id="@+id/searchView"
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/artlist_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
