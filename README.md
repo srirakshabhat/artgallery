@@ -1,6 +1,8 @@
 # artgallery
 A sample android app that shows arts list, search art and show details for each art.
 
+https://user-images.githubusercontent.com/38211165/221505383-3bae4c19-2d51-4cc1-898a-35d0fdf34a04.mp4
+
 ### Implemented using MVVM with Clean Architecture
 Structure of this project has 3 layers:
 - Presentation
